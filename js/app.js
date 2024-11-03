@@ -81,3 +81,22 @@ function classes() {
   addCondicao();
 }
 // classes();
+
+/* Métodos gerais */
+
+function metodosGerais() {
+  // adicionando atributo ao conteúdo
+  $('.linkTeste').attr('href', "www.google.com.br"); // adiciona o link ao href
+  $('.linkTeste').attr('class', "atributo"); // altera a classe de '.linkTeste' para atributo
+  $('.atributo').attr('class', "novoAtributo"); // altera classe de atributo para novoAtributo
+
+  // incluindo o attr em uma função
+  $('.novoAtributo').on('click', (event) => {
+    event.preventDefault();
+    $('.novoAtributo').removeAttr('href'); // remove o href
+  });
+
+  $('h1').remove();  // removendo o conteúdo completo
+}
+// metodosGerais();
+
