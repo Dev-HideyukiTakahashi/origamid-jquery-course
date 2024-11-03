@@ -55,4 +55,29 @@ function eventosBasicos() {
     $(this).text("Saindo do H1");
   });
 }
+// eventosBasicos();
 
+
+/* Classes */
+
+function classes() {
+  // adiciona a classe 'active' no conteúdo do <a>Teste</a>
+  $('.linkTeste').on('click', (event) => {
+    event.preventDefault();
+    // remover com removeClass
+    // toggleClasse sempre que clicar, alterar em adicionar e remover
+    $('.linkTeste').addClass('active');
+  });
+
+  // verificando se tem ou não alguma classe no conteúdo
+  function addCondicao() {
+    var condicao = $('.linkTeste').hasClass('active');
+    if (condicao) {
+      console.log("Tem a classe active, faça algo.");
+    } else {
+      console.log("Não tem a classe active, coloque a classe.");
+    }
+  }
+  addCondicao();
+}
+// classes();
