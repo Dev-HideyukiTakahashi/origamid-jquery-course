@@ -33,4 +33,26 @@ function outside() {
   // before insere antes do conteúdo do elemento
   $('h1').before('<span> Inserindo antes do "h1" com before() </span>');
 }
-outside();  
+// outside();  
+
+
+/* Eventos básicos */
+
+function eventosBasicos() {
+  // Gerando um evento ao clicar em um link<a> com a classe linkTeste
+  $('.linkTeste').on('click', () => {
+    $('.linkTeste').text('Clicou');
+  });
+
+  $('h1').on('mouseenter', function (event) {
+    // podemos passar o this para referenciar o parâmetro da seleção acima
+    // muda o texto do h1 ao passar o mouse perto
+    $(this).text("Acessando o H1");
+  });
+
+  $('h1').on('mouseleave', function (event) {
+    // muda o texto do h1 ao passar o mouse longe
+    $(this).text("Saindo do H1");
+  });
+}
+
