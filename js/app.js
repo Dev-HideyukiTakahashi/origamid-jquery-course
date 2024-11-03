@@ -24,4 +24,13 @@ function pegando() {
   // seleciona todos elementos que contem o parâmetro
   console.log($('h2').text());
 }
-pegando();
+// pegando();
+
+function outside() {
+  // after insere após do conteúdo do elemento
+  $('p').after('<span> Inserindo após do "p" com after() </span>');
+
+  // before insere antes do conteúdo do elemento
+  $('h1').before('<span> Inserindo antes do "h1" com before() </span>');
+}
+outside();  
