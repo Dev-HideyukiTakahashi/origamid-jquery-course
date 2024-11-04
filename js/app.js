@@ -100,3 +100,23 @@ function metodosGerais() {
 }
 // metodosGerais();
 
+/* Estilos */
+function estilos(params) {
+  var size = $('.linkTeste').css('font-size');
+  console.log(size); // out: 14px
+
+  $('.linkTeste').css('background', 'blue'); // alterando o estilo no css
+
+  $('.linkTeste').css({  // alterando varios campos de estilo no css
+
+    'background': 'red',
+    'font-size': '50px',
+  });
+
+  // retorna o objeto com distâncias de top e left do elemento
+  var modalOffset = $('a').offset();
+  console.log(modalOffset); // out: {top: 15, left: 141}
+
+}
+// estilos();
+
