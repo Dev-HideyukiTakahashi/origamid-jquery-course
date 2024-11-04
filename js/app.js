@@ -1,5 +1,4 @@
 /* Inserção */
-
 function seletores() {
   // append adiciona no final
   $('h2').append(' Isso é um H2'); // adiciona a frase ' Isso é um H2' no final de cada H2
@@ -37,7 +36,6 @@ function outside() {
 
 
 /* Eventos básicos */
-
 function eventosBasicos() {
   // Gerando um evento ao clicar em um link<a> com a classe linkTeste
   $('.linkTeste').on('click', () => {
@@ -59,7 +57,6 @@ function eventosBasicos() {
 
 
 /* Classes */
-
 function classes() {
   // adiciona a classe 'active' no conteúdo do <a>Teste</a>
   $('.linkTeste').on('click', (event) => {
@@ -83,7 +80,6 @@ function classes() {
 // classes();
 
 /* Métodos gerais */
-
 function metodosGerais() {
   // adicionando atributo ao conteúdo
   $('.linkTeste').attr('href', "www.google.com.br"); // adiciona o link ao href
@@ -121,9 +117,6 @@ function estilos(params) {
 // estilos();
 
 /* Tranversing */
-
-
-
 function tranversing() {
   // .each funciona como loop
   var i = 0;
@@ -140,6 +133,6 @@ function tranversing() {
     });
   });
 }
-tranversing();
+// tranversing();
 
 
