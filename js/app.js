@@ -120,3 +120,26 @@ function estilos(params) {
 }
 // estilos();
 
+/* Tranversing */
+
+
+
+function tranversing() {
+  // .each funciona como loop
+  var i = 0;
+  $('.menu-header li').each(function () {
+    console.log(this.innerText); // out: conteúdo interno de cada <li>
+    console.log(i++) // iterando cada conteúdo
+  });
+
+  // transformando o background de cada click em cada botão em azul separadamente
+  $('.menu-header li').each(function () {
+    $(this).on('click', (event) => {
+      event.preventDefault();
+      $(this).css('background', 'blue');
+    });
+  });
+}
+tranversing();
+
+
